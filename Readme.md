@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Селянина](https://up.htmlacademy.ru/adaptive/14/user/153179).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский] (https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
