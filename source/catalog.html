@@ -8,8 +8,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="https://htmlacademy.ru/">
-        <img src="http://placehold.it/150x100">
+      <a class="main-logo" href="index.html">
+        <img class="main-logo__image" src="http://placehold.it/150x100">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -39,53 +39,102 @@
         </ul>
       </nav>
     </header>
-    <main class="catalog">
-      <h1 class="catalog__title"></h1>
-      <section class="catalog__item">
-        <img src="http://placehold.it/150x100">
-        <h3 class="catalog__item-name">Зайчик-попрыгайчик</h3>
+    <main>
+      <h1 class="page-title">Каталог товаров</h1>
+      <article class="catalog__item">
+        <a class="catalog__item-link">
+          <img src="http://placehold.it/150x100">
+        </a>
+        <a class="catalog__item-link">
+          <h2 class="catalog__item-name page-title">Зайчик-попрыгайчик</h2>
+        </a>
         <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
-        <span class="catalog__price">1 200 руб.</span>
-      </section>
-      <section class="catalog__item">
-        <img src="http://placehold.it/150x100">
-        <h3 class="catalog__item-name">Корзинка для белья</h3>
+        <div class="catalog__price">
+          <span class="catalog__price-num">1 200 руб.</span>
+          <a class="catalog__price-link" href="#">
+            <img src="http://placehold.it/150x100" alt="корзина">
+          </a>
+        <div>
+      </article>
+      <article class="catalog__item">
+        <a class="catalog__item-link">
+          <img src="http://placehold.it/150x100">
+        </a>
+        <a class="catalog__item-link">
+          <h2 class="catalog__item-name page-title">Корзинка для белья</h2>
+        </a>
         <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
-        <span class="catalog__price">690 руб.</span>
-      </section>
-      <section class="catalog__item">
-        <img src="http://placehold.it/150x100">
-        <h3 class="catalog__item-name">Большая корзинка для игрушек</h3>
+        <div class="catalog__price">
+          <span class="catalog__price-num">690 руб.</span>
+          <a class="catalog__price-link" href="#">
+            <img src="http://placehold.it/150x100" alt="корзина">
+          </a>
+        <div>
+      </article>
+      <article class="catalog__item">
+        <a class="catalog__item-link">
+          <img src="http://placehold.it/150x100">
+        </a>
+        <a class="catalog__item-link">
+          <h2 class="catalog__item-name page-title">Большая корзинка для игрушек</h2>
+        </a>
         <p class="catalog__item-description">Диаметр 30 см, высота 30см</p>
-        <span class="catalog__price">1 500 руб.</span>
-      </section>
-      <section class="catalog__item-big">
-        <h3 class="catalog__item-name">Процесс производства</h3>
-        <img src="http://placehold.it/150x100">
-        <p class="catalog__item-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button value="воспроизведение"></button>
-      </section>
+        <div class="catalog__price">
+          <span class="catalog__price-num">1 500 руб.</span>
+          <a class="catalog__price-link" href="#">
+            <img src="http://placehold.it/150x100" alt="корзина">
+          </a>
+        <div>
+      </article>
+      <article class="production">
+        <a class="production__link">
+          <h2 class="production__title page-title">Процесс производства</h2>
+        </a>
+        <div class="production__video">
+          <img class="production__video-img" src="http://placehold.it/150x100">
+          <button class="production__video-start" value="воспроизведение" type="button">Воспроизвести</button>
+        </div>
+        <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      </article>
       <a class="button">Сделать заказ</a>
+      <div class="product-card">
+        <h2 class="page-title">Добавить в корзину</h2>
+        <p class="product-card__text">Выберите размер</p>
+        <div class="product-card__wrapper">
+          <button class="product-card__size">S</button>
+          <button class="product-card__size">M</button>
+          <button class="product-card__size">L</button>
+        </div>
+        <a class="button button--vary" href="">Добавить</a>
+      </div>
     </main>
     <footer class="page-footer">
 ,      <div class="footer-wrapper">
-        <div class="footer-logo">
-          <img class="footer-logo__img" src="http://placehold.it/150x100">
-        </div>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/htmlacademy" class="footer-social__link">
-            <img src="http://placehold.it/50x50" alt="insta">
-          </a>
-          <a href="https://www.facebook.com/htmlacademy" class="footer-social__link">
-            <img src="http://placehold.it/50x50" alt="fb">
-          </a>
-          <a href="https://twitter.com/htmlacademy_ru" class="footer-social__link">
-            <img src="http://placehold.it/50x50" alt="tw">
-          </a>
+        <a class="main-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="main-logo__image" src="http://placehold.it/150x100">
+        </a>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+                <img src="http://placehold.it/50x50" alt="insta">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                <img src="http://placehold.it/50x50" alt="fb">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+                <img src="http://placehold.it/50x50" alt="tw">
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="footer-copyright">
           <b class="footer-copyright__text">Разработано</b>
-          <a href="https://up.htmlacademy.ru/adaptive/14" class="footer-copyright__link">
+          <a href="https://up.htmlacademy.ru/adaptive" class="footer-copyright__link">
             <img src="http://placehold.it/50x50">
           </a>
         </div>

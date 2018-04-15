@@ -8,8 +8,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="https://htmlacademy.ru/">
-        <img src="http://placehold.it/150x100">
+      <a class="main-logo" href="index.html">
+        <img class="main-logo__image" src="http://placehold.it/150x100">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -39,47 +39,54 @@
         </ul>
       </nav>
     </header>
-    <main class="page-form">
-      <h1 class="description__title">Вязание на заказ</h1>
-      <p class="description__text">Мы будем рады воплотить в жизнь ваши пожелания!
-      Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="form__choice">
+    <main>
+      <div class="description">
+        <h1 class="page-title">Вязание на заказ</h1>
+        <p class="description__text">Мы будем рады воплотить в жизнь ваши пожелания!
+        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__group">
           <legend class="form__decoration">Тип</legend>
-          <input type="radio" class="form__choice-input" name="decoration" value="furniture" id="furniture" checked>
-          <label class="form__choice-label" for="furniture">Аксессуар для интерьера</label>
-
-          <input type="radio" class="form__choice-input" name="decoration" value="toy" id="toy">
-          <label class="form__choice-label" for="toy">Детская игрушка</label>
+          <div class="form__choice">
+            <input type="radio" class="form__choice-input" name="decoration" value="furniture" id="furniture" checked>
+            <label class="form__choice-label" for="furniture">Аксессуар для интерьера</label>
+          </div>
+          <div class="form__choice">
+            <input type="radio" class="form__choice-input" name="decoration" value="toy" id="toy">
+            <label class="form__choice-label" for="toy">Детская игрушка</label>
+          </div>
         </fieldset>
-        <fieldset class="form__color">
+        <fieldset class="form__group">
           <legend class="form__decoration">Цвет</legend>
-          <div class="form__color-width">
-            <input type="checkbox" class="form__color-input" name="white" id="white" checked>
-            <label class="form__color-label" for="white">Белый</label>
-          </div>
-          <div class="form__color-width">
-            <input type="checkbox" class="form__color-input" name="grey" id="grey" checked>
-            <label class="form__color-label" for="grey">Серый</label>
-          </div>
-          <div class="form__color-width">
-            <input type="checkbox" class="form__color-input" name="tif" id="tif">
-            <label class="form__color-label" for="tif">"Тиффани"</label>
-          </div>
-          <div class="form__color-width">
-            <input type="checkbox" class="form__color-input" name="black" id="black">
-            <label class="form__color-label" for="black">Черный</label>
-          </div>
-          <div class="form__color-width">
-            <input type="checkbox" class="form__color-input" name="pink" id="pink">
-            <label class="form__color-label" for="pink">Розовый</label>
-          </div>
-          <div class="form__color-width">
-            <input type="checkbox" class="form__color-input" name="orange" id="orange">
-            <label class="form__color-label" for="orange">Оранжевый</label>
+          <div class="form__color">
+            <div class="form__width">
+              <input type="checkbox" class="form__color-input" name="white" id="white" checked>
+              <label class="form__color-label" for="white">Белый</label>
+            </div>
+            <div class="form__width">
+              <input type="checkbox" class="form__color-input" name="grey" id="grey" checked>
+              <label class="form__color-label" for="grey">Серый</label>
+            </div>
+            <div class="form__width">
+              <input type="checkbox" class="form__color-input" name="tif" id="tif">
+              <label class="form__color-label" for="tif">"Тиффани"</label>
+            </div>
+            <div class="form__width">
+              <input type="checkbox" class="form__color-input" name="black" id="black">
+              <label class="form__color-label" for="black">Черный</label>
+            </div>
+            <div class="form__width">
+              <input type="checkbox" class="form__color-input" name="pink" id="pink">
+              <label class="form__color-label" for="pink">Розовый</label>
+            </div>
+            <div class="form__width">
+              <input type="checkbox" class="form__color-input" name="orange" id="orange">
+              <label class="form__color-label" for="orange">Оранжевый</label>
+            </div>
           </div>
         </fieldset>
-        <fieldset class="form__name">
+        <fieldset class="form__group">
           <legend class="form__decoration">ФИО</legend>
           <div class="form__name-width">
             <label class="form__name-label" for="name">Имя:</label>
@@ -101,7 +108,7 @@
           <label class="form__contacts-email">E-mail</label>
           <input type="email" class="form__contacts-email" name="email" id="email" placeholder="Ваш E-mail*" required>
         </div>
-        <fieldset class="form__add">
+        <fieldset class="form__group">
           <legend class="form__name">Доп</legend>
           <textarea class="form__more" id="add" name="text-add" rows="7">Опишите все ваши пожелания по заказу</textarea>
         </fieldset>
@@ -113,23 +120,31 @@
     </main>
     <footer class="page-footer">
       <div class="footer-wrapper">
-        <div class="footer-logo">
-          <img class="footer-logo__img" src="http://placehold.it/150x100">
-        </div>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/htmlacademy" class="footer-social__link">
-            <img src="http://placehold.it/50x50" alt="insta">
-          </a>
-          <a href="https://www.facebook.com/htmlacademy" class="footer-social__link">
-            <img src="http://placehold.it/50x50" alt="fb">
-          </a>
-          <a href="https://twitter.com/htmlacademy_ru" class="footer-social__link">
-            <img src="http://placehold.it/50x50" alt="tw">
-          </a>
+        <a class="main-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="main-logo__image" src="http://placehold.it/150x100">
+        </a>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+                <img src="http://placehold.it/50x50" alt="insta">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                <img src="http://placehold.it/50x50" alt="fb">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+                <img src="http://placehold.it/50x50" alt="tw">
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="footer-copyright">
           <b class="footer-copyright__text">Разработано</b>
-          <a href="https://up.htmlacademy.ru/adaptive/14" class="footer-copyright__link">
+          <a href="https://up.htmlacademy.ru/adaptive" class="footer-copyright__link">
             <img src="http://placehold.it/50x50">
           </a>
         </div>
