@@ -1,0 +1,153 @@
+.main-nav {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.main-nav__item {
+  border: 1px solid #ececec;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .main-nav__item:first-child {
+    display: none;
+  }
+
+  .main-nav__item:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__item:first-child {
+    display: block;
+  }
+
+  .main-nav__item:nth-child(2) {
+    display: block;
+    margin-right: 190px;
+  }
+
+.main-nav__item:nth-child(3) {
+    margin-right: -120px;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    width: 668px;
+    padding: 0 50px;
+    display: flex;
+    margin-top: -80px;
+    right: -380px;
+    margin-right: -380px;
+    margin: -80px -380px 0 auto;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__list {
+    width: 1050px;
+    margin: 0 auto;
+    right: 80px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav__add-list {
+  display: none;
+}
+
+.main-nav__tab {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav__tab {
+    width: 87%;
+    padding: 20px 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .main-nav__tab-item {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .main-nav__tab-item:last-child {
+    font-weight: 400;
+  }
+
+  .main-nav__tab-link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .main-nav__tab-link:nth-child(2) {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__tab {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__add-list {
+    display: flex;
+    list-style: none;
+    margin: 30px auto 0;
+    justify-content: space-between;
+    width: 1050px;
+  }
+
+  .main-nav__add-item {
+    font-weight: 500;
+  }
+
+  .main-nav__add-item:nth-child(2) {
+    margin-right: 400px;
+  }
+
+  .main-nav__add-item:last-child {
+    font-weight: 400;
+  }
+
+  .main-nav__add-link {
+    text-decoration: none;
+    color: #000000;
+  }
+}

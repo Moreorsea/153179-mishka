@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <a class="main-logo" href="index.html">
-        <img class="main-logo__image" src="http://placehold.it/150x100">
+        <img class="main-logo__image" src="img/logo-mobile.svg">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -26,6 +26,18 @@
             <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <!--main-nav__tab Отображается ТОЛЬКО на планшетной версии-->
+        <ul class="main-nav__tab">
+          <li class="main-nav__tab-item">
+            <a href="catalog.html" class="main-nav__tab-link">Каталог товаров</a>
+          </li>
+          <li class="main-nav__tab-item">
+            <a href="form.html" class="main-nav__tab-link">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__tab-item">
+            <a href="#" class="main-nav__tab-link">Бесплатная доставка по России</a>
+          </li>
+        </ul>
         <ul class="main-nav__add-list">
           <li class="main-nav__add-item">
             <a href="#" class="main-nav__add-link">Новые поступления</a>
@@ -39,49 +51,49 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="description">
+    <main class="page-form">
+      <div class="page-form__wrapper">
         <h1 class="page-title">Вязание на заказ</h1>
-        <p class="description__text">Мы будем рады воплотить в жизнь ваши пожелания!
-        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
+      <p class="page-form__description">Мы будем рады воплотить в жизнь ваши пожелания!
+      Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__group">
-          <legend class="form__decoration">Тип</legend>
-          <div class="form__choice">
-            <input type="radio" class="form__choice-input" name="decoration" value="furniture" id="furniture" checked>
-            <label class="form__choice-label" for="furniture">Аксессуар для интерьера</label>
+          <legend class="form__type">Тип</legend>
+          <div class="form__type-wrapper">
+            <input type="radio" class="form__type-input" name="decoration" value="furniture" id="furniture" checked>
+            <label class="form__type-label" for="furniture">Аксессуар для интерьера</label>
           </div>
-          <div class="form__choice">
-            <input type="radio" class="form__choice-input" name="decoration" value="toy" id="toy">
-            <label class="form__choice-label" for="toy">Детская игрушка</label>
+          <div class="form__type-wrapper">
+            <input type="radio" class="form__type-input" name="decoration" value="toy" id="toy">
+            <label class="form__type-label" for="toy">Детская игрушка</label>
           </div>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--color">
           <legend class="form__decoration">Цвет</legend>
           <div class="form__color">
-            <div class="form__width">
-              <input type="checkbox" class="form__color-input" name="white" id="white" checked>
+            <div class="form__color-wrapper">
+              <input type="checkbox" class="form__color-input" name="white" id="white" value="white" checked>
               <label class="form__color-label" for="white">Белый</label>
             </div>
-            <div class="form__width">
-              <input type="checkbox" class="form__color-input" name="grey" id="grey" checked>
+            <div class="form__color-wrapper">
+              <input type="checkbox" class="form__color-input" name="grey" id="grey" value="grey" checked>
               <label class="form__color-label" for="grey">Серый</label>
             </div>
-            <div class="form__width">
-              <input type="checkbox" class="form__color-input" name="tif" id="tif">
+            <div class="form__color-wrapper">
+              <input type="checkbox" class="form__color-input" name="tif" id="tif" value="tif">
               <label class="form__color-label" for="tif">"Тиффани"</label>
             </div>
-            <div class="form__width">
-              <input type="checkbox" class="form__color-input" name="black" id="black">
+            <div class="form__color-wrapper">
+              <input type="checkbox" class="form__color-input" name="black" id="black" value="black">
               <label class="form__color-label" for="black">Черный</label>
             </div>
-            <div class="form__width">
-              <input type="checkbox" class="form__color-input" name="pink" id="pink">
+            <div class="form__color-wrapper">
+              <input type="checkbox" class="form__color-input" name="pink" id="pink" value="pink">
               <label class="form__color-label" for="pink">Розовый</label>
             </div>
-            <div class="form__width">
-              <input type="checkbox" class="form__color-input" name="orange" id="orange">
+            <div class="form__color-wrapper">
+              <input type="checkbox" class="form__color-input" name="orange" id="orange" value="orange">
               <label class="form__color-label" for="orange">Оранжевый</label>
             </div>
           </div>
@@ -102,50 +114,51 @@
           </div>
         </fieldset>
         <div class="form__contacts">
-          <label class="form__contacts-tel" for="tel">Тел</label>
-          <input type="tel" class="form__contacts-tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XX XX*" required id="tel">
-
-          <label class="form__contacts-email">E-mail</label>
-          <input type="email" class="form__contacts-email" name="email" id="email" placeholder="Ваш E-mail*" required>
+          <div class="form__contacts-wrapper">
+            <label class="form__contacts-tel" for="tel">Тел</label>
+            <input type="tel" class="form__contacts-input" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XX XX*" required id="tel">
+          </div>
+          <div class="form__contacts-wrapper">
+            <label class="form__contacts-email">E-mail</label>
+            <input type="email" class="form__contacts-input" name="email" id="email" placeholder="Ваш E-mail*" required>
+          </div>
         </div>
         <fieldset class="form__group">
           <legend class="form__name">Доп</legend>
           <textarea class="form__more" id="add" name="text-add" rows="7">Опишите все ваши пожелания по заказу</textarea>
         </fieldset>
         <div class="form__send">
-          <span cpass="form__send-text">Поля обязательны для заполнения*</span>
-          <a class="button" href="#">Отправить заказ</a>
+          <span class="form__send-text">Поля обязательны для заполнения*</span>
+          <a class="button button--send" href="#">Отправить заказ</a>
         </div>
       </form>
     </main>
     <footer class="page-footer">
-      <div class="footer-wrapper">
+      <div class="page-footer__wrapper">
         <a class="main-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="main-logo__image" src="http://placehold.it/150x100">
+          <img class="main-logo__image--inv" src="img/logo-mobile.svg">
         </a>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="https://www.instagram.com/htmlacademy">
-                <img src="http://placehold.it/50x50" alt="insta">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/htmlacademy">
-                <img src="http://placehold.it/50x50" alt="fb">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://twitter.com/htmlacademy_ru">
-                <img src="http://placehold.it/50x50" alt="tw">
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              <img src="img/icon-insta.svg" alt="insta">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              <img src="img/icon-fb.svg" alt="fb">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+              <img src="img/icon-twitter.svg" alt="tw">
+            </a>
+          </li>
+        </ul>
         <div class="footer-copyright">
           <b class="footer-copyright__text">Разработано</b>
           <a href="https://up.htmlacademy.ru/adaptive" class="footer-copyright__link">
-            <img src="http://placehold.it/50x50">
+            <img src="img/htmlacademy.svg" width="40" height="40">
           </a>
         </div>
     </footer>
