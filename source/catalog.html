@@ -26,6 +26,18 @@
             <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <!--main-nav__tab Отображается ТОЛЬКО на планшетной версии-->
+        <ul class="main-nav__tab">
+          <li class="main-nav__tab-item">
+            <a href="catalog.html" class="main-nav__tab-link">Каталог товаров</a>
+          </li>
+          <li class="main-nav__tab-item">
+            <a href="form.html" class="main-nav__tab-link">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__tab-item">
+            <a href="#" class="main-nav__tab-link">Бесплатная доставка по России</a>
+          </li>
+        </ul>
         <ul class="main-nav__add-list">
           <li class="main-nav__add-item">
             <a href="#" class="main-nav__add-link">Новые поступления</a>
@@ -43,64 +55,74 @@
       <div class="catalog__title">
         <h1 class="page-title">Каталог товаров</h1>
       </div>
+      <div class="catalog__wrapper">
       <article class="catalog-item">
         <a class="catalog-item__img">
           <img src="img/photo-hare-mobile@1x.jpg">
         </a>
-        <a class="catalog-item__link">
-          <h2 class="catalog-item__name">Зайчик-попрыгайчик</h2>
-        </a>
-        <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
-        <div class="catalog-item__price">
-          <span class="catalog-item__price-num">1 200 руб.</span>
-          <a class="catalog-item__price-link" href="#">
-            <img src="http://placehold.it/20x20" alt="корзина">
+        <div class="catalog-item__wrapper">
+          <a class="catalog-item__link">
+            <h2 class="catalog-item__name">Зайчик-попрыгайчик</h2>
           </a>
-        <div>
+          <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+          <div class="catalog-item__price">
+            <span class="catalog-item__price-num">1 200 руб.</span>
+            <a class="catalog-item__price-link" href="#">
+              <img src="http://placehold.it/20x20" alt="корзина">
+            </a>
+          <div>
+        </div>
       </article>
       <article class="catalog-item">
         <a class="catalog-item__img">
           <img src="img/photo-bowl-mobile@1x.jpg">
         </a>
-        <a class="catalog-item-link">
-          <h2 class="catalog-item__name">Корзинка для белья</h2>
-        </a>
-        <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-        <div class="catalog-item__price">
-          <span class="catalog-item__price-num">690 руб.</span>
-          <a class="catalog-item__price-link" href="#">
-            <img src="http://placehold.it/20x20" alt="корзина">
+        <div class="catalog-item__wrapper">
+          <a class="catalog-item-link">
+            <h2 class="catalog-item__name">Корзинка для белья</h2>
           </a>
-        <div>
+          <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-item__price">
+            <span class="catalog-item__price-num">690 руб.</span>
+            <a class="catalog-item__price-link" href="#">
+              <img src="http://placehold.it/20x20" alt="корзина">
+            </a>
+          <div>
+        </div>
       </article>
       <article class="catalog-item">
         <a class="catalog-item__img">
           <img src="img/photo-toys-mobile@1x.jpg">
         </a>
-        <a class="catalog-item__link">
-          <h2 class="catalog-item__name">Большая корзинка для игрушек</h2>
-        </a>
-        <p class="catalog-item__description">Диаметр 30 см, высота 30см</p>
-        <div class="catalog-item__price">
-          <span class="catalog-item__price-num">1 500 руб.</span>
-          <a class="catalog-item__price-link" href="#">
-            <img src="http://placehold.it/20x20" alt="корзина">
+        <div class="catalog-item__wrapper">
+          <a class="catalog-item__link">
+            <h2 class="catalog-item__name">Большая корзинка для игрушек</h2>
           </a>
-        <div>
+          <p class="catalog-item__description">Диаметр 30 см, высота 30см</p>
+          <div class="catalog-item__price">
+            <span class="catalog-item__price-num">1 500 руб.</span>
+            <a class="catalog-item__price-link" href="#">
+              <img src="http://placehold.it/20x20" alt="корзина">
+            </a>
+          <div>
+        </div>
       </article>
       <article class="production">
-        <a class="production__link">
-          <h2 class="production__title">Процесс производства</h2>
-        </a>
-        <div class="production__video">
-          <img class="production__video-img" src="img/video-mobile@1x.jpg">
-          <button class="production__video-start" value="воспроизведение" type="button">
-            <img src="img/icon-play.svg" width="30" height="40">
-          </button>
-        </div>
+        <div class="production__wrapper">
+          <a class="production__link">
+            <h2 class="production__title">Процесс производства</h2>
+          </a>
+          <div class="production__video">
+            <img class="production__video-img" src="img/video-mobile@1x.jpg">
+            <button class="production__video-start" value="воспроизведение" type="button">
+              <img src="img/icon-play.svg" width="30" height="40">
+            </button>
+          </div>
         <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="button">Сделать заказ</a>
+        <a class="button button--price">Сделать заказ</a>
+      </div>
       </article>
+    </div>
       <div class="product-card">
         <h2 class="page-title">Добавить в корзину</h2>
         <p class="product-card__text">Выберите размер:</p>
@@ -124,7 +146,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="main-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="main-logo__footer" src="img/logo-mobile.svg">
+          <img class="main-logo__image main-logo__image--inv" src="img/logo-mobile.svg">
         </a>
         <ul class="social">
           <li class="social__item">

@@ -1,14 +1,37 @@
 .category {
   background-image: linear-gradient(#63d1bb 50%, #56c3b2 50%);
+  margin-top: 195px;
 }
 
 .category__green {
   .container-mob;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
   .category {
     .container-tab;
+    background-image: none;
+  }
+
+  .category__wrapper {
+    background-image: linear-gradient(to right, #63d1bb 50%, #56c3b2 50%);
+    width: 668px;
+    display: flex;
+    margin-top: 190px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .category {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .category__wrapper {
+    width: 1050px;
+    margin-top: 0;
   }
 }
 
@@ -18,4 +41,5 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: 500;
+  width: 110px;
 }
