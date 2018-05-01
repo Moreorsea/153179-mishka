@@ -1,6 +1,7 @@
 .main-nav {
   font-size: 17px;
   line-height: 24px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -8,6 +9,18 @@
     font-size: 15px;
     line-height: 24px;
   }
+}
+
+.main-nav__toggle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  z-index: 2;
+  background-color: #ffffff;
+  top: -40px;
+  right: 20px;
+  background-image: url("img/icon-menu-close.svg");
 }
 
 .main-nav__item {
