@@ -6,7 +6,7 @@
   font-weight: 500;
   outline: 2px solid #444444;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 13px 30px;
   text-align: center;
   display: block;
   margin: 20px 0;
@@ -32,13 +32,10 @@
 }
 
 @media (min-width: 768px) {
-  .button .button--review {
-    order: 3;
-
-  }
-
-  .button--review {
-    padding: 10px 0;
+  .button.button--review {
+    order: -1;
+    width: 120px;
+    padding: 13px 25px;
   }
 }
 
@@ -47,28 +44,55 @@
 }
 
 @media (min-width: 768px) {
-  .button--feedback {
+  .button.button--feedback {
     margin: 40px auto;
+    padding: 15px 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .button--feedback {
-    width: 180px;
-    margin: 40px 0 40px 240px;
+  .button.button--feedback {
+    width: 225px;
+    margin: 85px 0 40px 180px;
   }
+}
+
+.button.button--send {
+  margin: 35px 0 55px;
 }
 
 @media (min-width: 768px) {
-  .button--send {
+  .button.button--send {
     order: -2;
-    padding: 15px 10px;
+    padding: 15px 30px;
+    width: auto;
+
   }
 }
 
 @media (min-width: 1200px) {
-  .button--price {
+  .button.button--send {
+    margin-top: 45px;
+  }
+}
+
+.button.button--price {
+  margin: 25px 35px 35px;
+  padding: 15px 25px;
+}
+
+@media (min-width: 768px) {
+  .button.button--price {
+    width: 530px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button.button--price {
     width: auto;
+    margin-left: 80px;
+    margin-top: 40px;
   }
 }
 
@@ -77,4 +101,15 @@
   height: 1px;
   position: absolute;
   border: 0;
+}
+
+.button .button--submit {
+  padding: 13px 30px;
+}
+
+@media (min-width: 1200px) {
+  .button.button--submit {
+    margin-left: 180px;
+    padding: 17px 27px;
+  }
 }

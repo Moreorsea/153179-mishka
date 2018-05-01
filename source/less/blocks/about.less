@@ -8,8 +8,18 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .about {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+}
+
 .about__title {
-  padding: 30px 0;
+  padding: 55px 0 0;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 @media (min-width: 768px) {
@@ -18,6 +28,7 @@
     line-height: 50px;
     width: 668px;
     text-align: left;
+    padding: 20px 0 50px 0;
   }
 }
 
@@ -25,7 +36,8 @@
   .about__title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 180px;
+    padding-top: 140px;
+    padding-left: 145px;
   }
 }
 
@@ -40,20 +52,103 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
 
+@media (min-width: 1200px) {
+  .about__list {
+    width: 750px;
+    margin: 0 auto;
+  }
 }
 
 .about__item {
   font-size: 17px;
   line-height: 20px;
   font-weight: 500;
-  padding: 20px 0;
+  padding: 83px 0 0;
+  width: 70%;
+  position: relative;
+}
+
+.about__item::before {
+  content: "";
+  width: 50px;
+  height: 45px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about__item--flower::before {
+  background-image: url("/img/icon-feature-flower.svg");
+  background-repeat:no-repeat;
+  background-size: 33px 37px;
+  top: 28px;
+  left: 9px;
+}
+
+.about__item--money {
   width: 80%;
+}
+
+.about__item--money::before {
+  background-image: url("/img/icon-feature-money.svg");
+  background-repeat:no-repeat;
+  background-size: 47px 26px;
+  top: 30px;
+}
+
+.about__item--heart::before {
+  background-image: url("/img/icon-feature-heart.svg");
+  background-repeat:no-repeat;
+  background-size: 35px 27px;
+  top: 35px;
+  left: 10px;
+}
+
+.about__item--ball {
+  width: 90%;
+}
+
+.about__item--ball::before {
+  background-image: url("/img/icon-feature-ball.svg");
+  background-repeat:no-repeat;
+  top: 32px;
+  left: 5px;
+}
+
+.about__item--rocket {
+  width: 100%;
+}
+
+.about__item--rocket::before {
+  background-image: url("/img/icon-feature-rocket.svg");
+  background-repeat:no-repeat;
+  background-size: 56px 25px;
+  width: 57px;
+  top: 32px;
+  left: -4px;
+}
+
+.about__item--gift {
+  width: 80%;
+}
+
+.about__item--gift::before {
+  background-image: url("/img/icon-feature-gift.svg");
+  background-repeat:no-repeat;
+  background-size: 35px 32px;
+  top: 30px;
+  left: 5px;
 }
 
 @media (min-width: 768px) {
   .about__item {
-    width: 300px;
+    width: 220px;
+    padding: 55px 105px 30px 5px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .about__item:first-child {
@@ -70,5 +165,88 @@
 
   .about__item:nth-child(5) {
     order: -3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about__item {
+    width: 235px;
+  }
+}
+
+.about__item-img {
+  margin-bottom: 10px;
+}
+
+/*Медиа выражения для псевдоэлементов и модификаторов*/
+@media (min-width: 768px) {
+  .about__item--flower::before {
+    top: 0;
+    left: 11px;
+  }
+
+  .about__item.about__item--money {
+    width: 240px;
+    padding-top: 80px;
+    padding-right: 85px;
+  }
+
+  .about__item--money::before {
+    top: 28px;
+    left: 5px;
+  }
+
+  .about__item--heart {
+    padding-top: 80px;
+  }
+
+  .about__item--heart::before {
+    top: 33px;
+  }
+
+  .about__item.about__item--ball {
+    width: 255px;
+    padding-right: 65px;
+  }
+
+  .about__item--ball::before {
+    top: 5px;
+    left: 10px;
+  }
+
+  .about__item.about__item--rocket {
+    padding-top: 80px;
+    width: 300px;
+    padding-right: 20px;
+  }
+
+  .about__item--rocket::before {
+    left: 0;
+  }
+
+  .about__item.about__item--gift {
+    padding-top: 80px;
+    width: 240px;
+    padding-right: 85px;
+  }
+
+  .about__item--gift::before {
+    left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about__item.about__item--money {
+    padding-right: 105px;
+    padding-top: 50px;
+  }
+
+  .about__item--money::before {
+    top: -2px;
+  }
+
+  .about__item--rocket::before {
+    left: -4px;
+    top: 29px;
   }
 }

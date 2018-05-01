@@ -7,35 +7,28 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--grey">
       <a class="main-logo" href="index.html">
         <img class="main-logo__image" src="img/logo-mobile.svg">
       </a>
       <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">M</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-          </li>
         </ul>
-        <!--main-nav__tab Отображается ТОЛЬКО на планшетной версии-->
-        <ul class="main-nav__tab">
-          <li class="main-nav__tab-item">
-            <a href="catalog.html" class="main-nav__tab-link">Каталог товаров</a>
+        <ul class="main-nav__search">
+          <li class="main-nav__search-item main-nav__search-item--search">
+            <a class="main-nav__search-link main-nav__search-link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__tab-item">
-            <a href="form.html" class="main-nav__tab-link">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__tab-item">
-            <a href="#" class="main-nav__tab-link">Бесплатная доставка по России</a>
+          <li class="main-nav__search-item">
+            <a class="main-nav__search-link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__add-list">
@@ -45,10 +38,10 @@
           <li class="main-nav__add-item">
             <a href="#" class="main-nav__add-link">Распродажа</a>
           </li>
-          <li class="main-nav__add-item">
-            <a href="#" class="main-nav__add-link">Бесплатная доставка по России</a>
-          </li>
         </ul>
+        <span class="main-nav__delivery">
+          <a href="#" class="main-nav__delivery-link">Бесплатная доставка по России</a>
+        </span>
       </nav>
     </header>
     <main class="catalog">
@@ -145,7 +138,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="main-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="main-logo main-logo--footer" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="main-logo__image main-logo__image--inv" src="img/logo-mobile.svg">
         </a>
         <ul class="social">

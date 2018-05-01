@@ -1,7 +1,29 @@
 .catalog__title {
   background-color: #f1f1f1;
-  padding: 40px 0;
+  padding: 50px 0;
   text-align: center;
+  min-height: 75px;
+  margin-bottom: 30px;
+}
+
+@media (Min-width: 768px) {
+  .catalog__title {
+    padding: 25px 0 40px;
+  }
+
+  .catalog__wrapper {
+    margin-top: 90px;
+  }
+}
+
+.catalog__title.page-title {
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .catalog__title.page-title {
+    padding: 20px 0 50px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -11,7 +33,6 @@
 
   .catalog__title {
     background-color: #f1f1f1;
-    padding: 40px 0;
     text-align: center;
     width: 100%;
   }
@@ -24,15 +45,19 @@
 }
 
 .catalog-item {
-  .container-mob;
-  margin: 30px auto;
+  width: 260px;
+  margin: 10px auto 30px;
   border: 1px solid #ececec;
+}
+
+.catalog-item__wrapper {
   padding: 20px;
 }
 
 @media (min-width: 768px) {
   .catalog-item {
-    .container-tab;
+    width: 668px;
+    margin: 0 auto;
     display: flex;
     margin-bottom: 40px;
   }
@@ -56,6 +81,7 @@
   .catalog-item__img img{
     width: 335px;
     height: 335px;
+    padding-bottom: 0;
   }
 }
 
@@ -63,6 +89,18 @@
   .catalog-item__img img {
     width: 315px;
     height: 460px;
+  }
+}
+
+.catalog-item__link {
+  text-align: center;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .catalog-item__link {
+    text-align: left;
+    padding: 5px 0 0 5px;
   }
 }
 
@@ -80,19 +118,34 @@
 .catalog-item__description {
   font-size: 13px;
   line-height: 30px;
+  padding: 5px 0 20px 10px;
+  border-bottom: 2px solid #ececec;
 }
 
 @media (min-width: 768px) {
   .catalog-item__description {
     font-size: 15px;
+    padding: 5px 0 0 5px;
+    border-bottom: none;
   }
+}
+
+.catalog-item__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px 0 5px 5px;
 }
 
 @media (min-width: 768px) {
   .catalog-item__price {
-    margin-top: 210px;
+    margin-top: 175px;
     border-top: 1px solid #ececec;
     padding-top: 20px;
+    padding-bottom: 0;
+    padding-left: 10px;
+    width: 270px;
   }
 }
 

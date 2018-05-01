@@ -5,18 +5,16 @@
 
 .contacts__title {
   color: #000000;
-  padding: 40px 50px;
+  padding: 40px 30px;
   width: 260px;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  .contacts {
-    padding-top: 110px;
-
-  }
-
   .contacts__title {
-    padding-top: 250px;
+    padding-top: 70px;
     font-size: 43px;
     line-height: 50px;
     width: 668px;
@@ -24,26 +22,53 @@
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1200px) {
   .contacts {
     width: 1050px;
     position: relative;
+    margin-top: 90px;
+    margin-bottom: 110px;
   }
 }
 
 @media (min-width: 1200px) {
   .contacts__title {
-    position: relative;
     font-size: 53px;
     line-height: 57px;
-    margin-top: 50px;
+    width: 1050px;
+    padding: 70px 0 0 170px;
+    text-align: left;
+    margin: 0;
   }
 }
 
+.contacts__wrapper {
+  margin-top: 20px;
+}
+
+.contacts__email,
+.contacts__adress {
+    width: 260px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
   .contacts__email,
   .contacts__adress {
-    width: 260px;
-    padding: 20px 50px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.contacts__email {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.contacts__adress {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -63,6 +88,21 @@
 @media (min-width: 1200px) {
   .contacts__list {
     flex-direction: column;
+    margin: 0;
+    padding: 50px 0 0;
+    width: 350px;
+    margin-left: 175px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__email {
+    padding: 0;
+  }
+
+  .contacts__adress {
+    padding: 20px 0 0;
+    width: 350px;
   }
 }
 
@@ -73,9 +113,26 @@
   color: #575757;
 }
 
+@media (min-width: 1200px) {
+  .contacts__link {
+    margin-left: 30px;
+  }
+}
+
 .contacts__adress-street {
   width: 140px;
   display: block;
+  margin-right: 40px;
+  line-height: 30px;
+}
+
+@media (min-width: 1200px) {
+  .contacts__adress-street {
+    width: 220px;
+    display: block;
+    margin-right: 50px;
+
+  }
 }
 
 .contacts__wrapper-maps {
@@ -89,14 +146,11 @@
 }
 
 @media (min-width: 1200px) {
-  .contacts__wrapper {
-    position: absolute;
-    top: 370px;
-    right: 0;
-  }
-
   .contacts__wrapper-maps {
-    width: 510px;
-    height: 440px;
+    width: 525px;
+    height: 455px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
