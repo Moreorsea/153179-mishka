@@ -1,31 +1,62 @@
-.reviews,
-.reviews__title {
+.reviews {
   .container-mob;
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  padding-top: 55px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: 768px) {
   .reviews {
-    .container-tab;
+    width: 100%;
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+    height: 457px;
+    padding: 75px 0 0;
   }
 
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-    margin: 0;
-    padding-left: 0;
-    position: relative;
-    top: 80px;
-    z-index: 10;
+    padding: 0;
   }
 
   .review__wrapper {
     position: absolute;
-    height: 457px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 430px;
-    margin-top: -130px;
+    justify-content: space-between;
+    width: 175px;
+    right: 50px;
+    top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    width: 1050px;
+    margin: 60px auto 0;
+    padding: 70px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews__wrapper {
+    width: 775px;
+    padding-left: 75px;
   }
 }
 
@@ -63,17 +94,27 @@
 
 .review__item {
   margin: 0;
+  line-height: 30px;
+  padding-bottom: 25px;
+}
+
+.review__name {
+  font-style: normal;
+  font-size: 17px;
 }
 
 @media (min-width: 768px) {
   .review__item {
-    position: relative;
-    top: 130px;
+    margin-top: 50px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
-  .review__name {
-    position: relative;
-    top: 180px;
+  .review__item-name {
+    display: inline-block;
+    padding-top: 55px;
+    font-style: normal;
+    font-weight: 500;
   }
 
   .review__nickname {
@@ -81,6 +122,16 @@
     top: 210px;
     left: -220px;
   }
+}
+
+@media (min-width: 1200px) {
+  .review__item-name {
+    padding-top: 35px;
+  }
+}
+
+.review__nickname {
+  font-size: 17px;
 }
 
 .review__toggle {

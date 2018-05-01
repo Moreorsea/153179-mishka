@@ -7,35 +7,28 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--grey">
       <a class="main-logo" href="index.html">
         <img class="main-logo__image" src="img/logo-mobile.svg">
       </a>
       <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">M</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <!--main-nav__tab Отображается ТОЛЬКО на планшетной версии-->
-        <ul class="main-nav__tab">
-          <li class="main-nav__tab-item">
-            <a href="catalog.html" class="main-nav__tab-link">Каталог товаров</a>
+        <ul class="main-nav__search">
+          <li class="main-nav__search-item main-nav__search-item--search">
+            <a class="main-nav__search-link main-nav__search-link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__tab-item">
-            <a href="form.html" class="main-nav__tab-link">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__tab-item">
-            <a href="#" class="main-nav__tab-link">Бесплатная доставка по России</a>
+          <li class="main-nav__search-item">
+            <a class="main-nav__search-link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__add-list">
@@ -45,10 +38,10 @@
           <li class="main-nav__add-item">
             <a href="#" class="main-nav__add-link">Распродажа</a>
           </li>
-          <li class="main-nav__add-item">
-            <a href="#" class="main-nav__add-link">Бесплатная доставка по России</a>
-          </li>
         </ul>
+        <span class="main-nav__delivery">
+          <a href="#" class="main-nav__delivery-link">Бесплатная доставка по России</a>
+        </span>
       </nav>
     </header>
     <main class="page-form">
@@ -60,13 +53,13 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__group">
           <legend class="form__type">Тип</legend>
-          <div class="form__type-wrapper">
+          <div class="form__type-wrapper form__type-wrapper--top">
             <input type="radio" class="form__type-input" name="decoration" value="furniture" id="furniture" checked>
-            <label class="form__type-label" for="furniture">Аксессуар для интерьера</label>
+            <label class="form__type-label fotm__type-label--top" for="furniture">Аксессуар для интерьера</label>
           </div>
-          <div class="form__type-wrapper">
+          <div class="form__type-wrapper form__type-wrapper--bottom">
             <input type="radio" class="form__type-input" name="decoration" value="toy" id="toy">
-            <label class="form__type-label" for="toy">Детская игрушка</label>
+            <label class="form__type-label fotm__type-label--bottom" for="toy">Детская игрушка</label>
           </div>
         </fieldset>
         <fieldset class="form__group form__group--color">
@@ -98,8 +91,8 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__decoration">ФИО</legend>
+        <fieldset class="form__group form__group--name">
+          <legend class="form__decoration form__decoration--name">ФИО</legend>
           <div class="form__name-width">
             <label class="form__name-label" for="name">Имя:</label>
             <input type="text" class="form__name-input" id="name" name="name" placeholder="Введите ваше имя*" required>
@@ -119,23 +112,23 @@
             <input type="tel" class="form__contacts-input" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XX XX*" required id="tel">
           </div>
           <div class="form__contacts-wrapper">
-            <label class="form__contacts-email">E-mail</label>
-            <input type="email" class="form__contacts-input" name="email" id="email" placeholder="Ваш E-mail*" required>
+            <label class="form__contacts-email">E - mail</label>
+            <input type="email" class="form__contacts-input form__contacts-input--email" name="email" id="email" placeholder="Ваш E-mail*" required>
           </div>
         </div>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--textarea">
           <legend class="form__name">Доп</legend>
           <textarea class="form__more" id="add" name="text-add" rows="7">Опишите все ваши пожелания по заказу</textarea>
         </fieldset>
         <div class="form__send">
-          <span class="form__send-text">Поля обязательны для заполнения*</span>
+          <span class="form__send-text">*Поля обязательны для заполнения</span>
           <a class="button button--send" href="#">Отправить заказ</a>
         </div>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="main-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="main-logo main-logo--footer" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="main-logo__image--inv" src="img/logo-mobile.svg">
         </a>
         <ul class="social">
