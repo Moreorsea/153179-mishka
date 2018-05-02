@@ -9,7 +9,11 @@
   <body>
     <header class="page-header page-header--grey">
       <a class="main-logo" href="index.html">
-        <img class="main-logo__image" src="img/logo-mobile.svg">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-logo__image" src="img/logo-mobile.svg" alt="Логотип">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -51,7 +55,11 @@
       <div class="catalog__wrapper">
       <article class="catalog-item">
         <a class="catalog-item__img">
-          <img src="img/photo-hare-mobile@1x.jpg">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg" alt="Пример">
+          </picture>
         </a>
         <div class="catalog-item__wrapper">
           <a class="catalog-item__link">
@@ -68,7 +76,11 @@
       </article>
       <article class="catalog-item">
         <a class="catalog-item__img">
-          <img src="img/photo-bowl-mobile@1x.jpg">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+            <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg" alt="Пример">
+          </picture>
         </a>
         <div class="catalog-item__wrapper">
           <a class="catalog-item-link">
@@ -85,7 +97,11 @@
       </article>
       <article class="catalog-item">
         <a class="catalog-item__img">
-          <img src="img/photo-toys-mobile@1x.jpg">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg" alt="Пример">
+          </picture>
         </a>
         <div class="catalog-item__wrapper">
           <a class="catalog-item__link">
@@ -106,7 +122,11 @@
             <h2 class="production__title">Процесс производства</h2>
           </a>
           <div class="production__video">
-            <img class="production__video-img" src="img/video-mobile@1x.jpg">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="production__video-img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Пример">
+            </picture>
             <button class="production__video-start" value="воспроизведение" type="button">
               <img src="img/icon-play.svg" width="30" height="40">
             </button>
@@ -138,8 +158,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="main-logo main-logo--footer" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="main-logo__image main-logo__image--inv" src="img/logo-mobile.svg">
+        <a class="main-logo main-logo--footer" href="index.html">
+          <img class="main-logo__image--inv" src="img/logo-footer.svg">
         </a>
         <ul class="social">
           <li class="social__item">
