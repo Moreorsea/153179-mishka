@@ -9,7 +9,11 @@
   <body>
     <header class="page-header page-header--grey">
       <a class="main-logo" href="index.html">
-        <img class="main-logo__image" src="img/logo-mobile.svg">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-logo__image" src="img/logo-mobile.svg" alt="Логотип">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -59,7 +63,7 @@
           </div>
           <div class="form__type-wrapper form__type-wrapper--bottom">
             <input type="radio" class="form__type-input" name="decoration" value="toy" id="toy">
-            <label class="form__type-label fotm__type-label--bottom" for="toy">Детская игрушка</label>
+            <label class="form__type-label form__type-label--bottom" for="toy">Детская игрушка</label>
           </div>
         </fieldset>
         <fieldset class="form__group form__group--color">
@@ -128,8 +132,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="main-logo main-logo--footer" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="main-logo__image--inv" src="img/logo-mobile.svg">
+        <a class="main-logo main-logo--footer" href="index.html">
+          <img class="main-logo__image--inv" src="img/logo-footer.svg">
         </a>
         <ul class="social">
           <li class="social__item">
