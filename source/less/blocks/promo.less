@@ -1,7 +1,31 @@
-.promo__img {
-  height: 280px;
-  position: absolute;
+.promo {
   width: 100%;
+  min-height: 280px;
+  background-color: #f9f9f9;
+}
+
+.promo__wrapper {
+  width: 320px;
+  min-height: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .promo__wrapper {
+    width: 668px;
+  }
+}
+
+.promo__img {
+  position: absolute;
+  height: 280px;
+  transform: scaleX(1.75);
+}
+
+@media (min-width: 768px) {
+  .promo__img {
+    width: 668px;
+  }
 }
 
 .promo .page-title {
