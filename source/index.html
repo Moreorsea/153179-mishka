@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -160,12 +162,14 @@
             <span class="contacts__adress-street">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</span>
           </p>
         </div>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper" id="map">
+          <!--
           <picture>
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="contacts__wrapper-maps" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" alt="Карта">
           </picture>
+        -->
         </div>
         <a href="#" class="button button--feedback">Напишите нам</a>
       </div>
@@ -173,7 +177,6 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="main-logo main-logo--footer">
-          <!--Поменять класс у лого. Такой сделала, когда стилизовала лого в шапке-->
           <img class="main-logo__image--inv" src="img/logo-footer.svg">
         </a>
         <ul class="social">
