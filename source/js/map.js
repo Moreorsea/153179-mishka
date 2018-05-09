@@ -1,4 +1,3 @@
-<script type="text/javascript">
     ymaps.ready(init);
     var myMap;
 
@@ -8,4 +7,3 @@
             zoom: 7
         });
     }
-</script>
