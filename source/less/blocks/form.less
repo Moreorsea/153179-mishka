@@ -145,8 +145,14 @@
 }
 
 .form__type-input:checked + .form__type-label::before {
-  box-shadow: inset 0 0 0 13px #ffffff;
+  box-shadow: inset 0 0 0 10px #ffffff;
   background-color: #62d1b2;
+}
+
+@media (min-width: 768px) {
+  .form__type-input:checked + .form__type-label::before {
+    box-shadow: inset 0 0 0 14px #ffffff;
+  }
 }
 
 @media (min-width: 768px) {
@@ -254,8 +260,14 @@
 .form__color-input:checked + .form__color-label::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-size: 33px 25px;
+  background-size: 25px 15px;
   background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .form__color-input:checked + .form__color-label::before {
+    background-size: 31px 20px;
+  }
 }
 
 @media (min-width: 1150px) {
