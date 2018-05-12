@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  background-image: url("/img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: 100% 6px;
   background-position: 0 15px;
@@ -20,7 +20,7 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0 100px;
-    background-position: 50px 53px;
+    background-position: 110px 53px;
     background-size: 1050px 22px;
     background-repeat: no-repeat;
   }
@@ -97,7 +97,7 @@
 }
 
 .about__item--flower::before {
-  background-image: url("/img/icon-feature-flower.svg");
+  background-image: url("../img/icon-feature-flower.svg");
   background-repeat: no-repeat;
   background-size: 33px 37px;
   top: 28px;
@@ -109,14 +109,14 @@
 }
 
 .about__item--money::before {
-  background-image: url("/img/icon-feature-money.svg");
+  background-image: url("../img/icon-feature-money.svg");
   background-repeat: no-repeat;
   background-size: 47px 26px;
   top: 30px;
 }
 
 .about__item--heart::before {
-  background-image: url("/img/icon-feature-heart.svg");
+  background-image: url("../img/icon-feature-heart.svg");
   background-repeat: no-repeat;
   background-size: 35px 27px;
   top: 35px;
@@ -128,7 +128,7 @@
 }
 
 .about__item--ball::before {
-  background-image: url("/img/icon-feature-ball.svg");
+  background-image: url("../img/icon-feature-ball.svg");
   background-repeat: no-repeat;
   top: 32px;
   left: 5px;
@@ -139,7 +139,7 @@
 }
 
 .about__item--rocket::before {
-  background-image: url("/img/icon-feature-rocket.svg");
+  background-image: url("../img/icon-feature-rocket.svg");
   background-repeat: no-repeat;
   background-size: 56px 25px;
   width: 57px;
@@ -152,7 +152,7 @@
 }
 
 .about__item--gift::before {
-  background-image: url("/img/icon-feature-gift.svg");
+  background-image: url("../img/icon-feature-gift.svg");
   background-repeat: no-repeat;
   background-size: 35px 32px;
   top: 30px;
@@ -267,8 +267,12 @@
   }
 
   .about__item--rocket::before {
-    left: -4px;
+    left: 20px;
     top: 29px;
+  }
+
+  .about__item.about__item--rocket {
+    padding-left: 20px;
   }
 
   .about__item.about__item--gift {
