@@ -12,7 +12,7 @@
 @media (min-width: 1150px) {
   .best {
     width: 1050px;
-    padding-top: 80px;
+    padding-top: 75px;
     margin: 0 auto;
   }
 }
@@ -32,16 +32,16 @@
     width: 70px;
     text-align: center;
     line-height: 17px;
-    top: 65px;
-    right: 75px;
+    top: 57px;
+    right: 77px;
   }
 }
 
 @media (min-width: 1150px) {
   .best__week {
     position: absolute;
-    top: 145px;
-    left: 35px;
+    top: 135px;
+    left: 85px;
     width: 100px;
     font-size: 17px;
     line-height: 17px;
@@ -60,6 +60,12 @@
   line-height: 20px;
 }
 
+@media (min-width: 768px) {
+  .best__table {
+    padding-top: 33px;
+  }
+}
+
 .best__text,
 .best__table-cell {
   color: #444444;
@@ -70,8 +76,23 @@
   border-bottom: 1px solid #ececec;
 }
 
+@media (min-width: 768px) {
+  .best__table-cell {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 3px 0 6px 0;
+  }
+}
+
 .best__table-cell--right {
   padding-left: 25px;
+}
+
+@media (min-width: 768px) {
+  .best__table-cell.best__table-cell--right {
+    padding-left: 28px;
+    padding-right: 58px;
+  }
 }
 
 .best__text {
@@ -89,29 +110,28 @@
     width: 290px;
     font-size: 17px;
     line-height: 30px;
-    padding-bottom: 30px;
-    padding-top: 55px;
+    padding-top: 45px;
   }
 
   .best__img {
     position: absolute;
-    margin-left: 330px;
+    margin-left: 337px;
     width: 335px;
-    height: 420px;
+    height: 400px;
     bottom: -20px;
-    top: 130px;
+    top: 128px;
   }
 
   .best__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 50px;
+    padding-top: 45px;
   }
 }
 
 @media (min-width: 1150px) {
   .best__text {
-    padding-top: 25px;
+    padding-top: 45px;
     padding-left: 175px;
   }
 }
@@ -123,13 +143,6 @@
     z-index: 10;
     position: relative;
     padding-left: 175px;
-  }
-}
-
-@media (min-width: 768px) {
-  .best__table-cell {
-    font-size: 15px;
-    line-height: 30px;
   }
 }
 
@@ -151,7 +164,7 @@
     display: inline-block;
     font-size: 20px;
     line-height: 24px;
-    margin-left: 60px;
+    margin-left: 63px;
     padding: 10px;
   }
 }
@@ -160,17 +173,18 @@
   .best__img {
     width: 525px;
     height: 630px;
-    right: 45px;
-    top: 45px;
+    right: 50px;
+    top: 40px;
   }
 
   .best__table {
     margin-bottom: 80px;
+    margin-top: 10px;
     padding-left: 175px;
   }
 
   .best__price {
     margin-left: 240px;
-    padding-top: 35px;
+    padding-top: 25px;
   }
 }

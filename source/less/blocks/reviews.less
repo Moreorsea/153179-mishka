@@ -15,7 +15,7 @@
     width: 100%;
     background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
-    height: 457px;
+    height: 450px;
     padding: 75px 0 0;
   }
 
@@ -32,8 +32,8 @@
     flex-direction: column;
     justify-content: space-between;
     width: 175px;
-    right: 50px;
-    top: 0;
+    right: -5px;
+    top: -35px;
   }
 }
 
@@ -63,7 +63,9 @@
 
 @media (min-width: 1150px) {
   .review__wrapper {
-    margin-left: 500px;
+    height: 350px;
+    top: -27px;
+    right: -100px;
   }
 
   .reviews__title {
@@ -120,9 +122,11 @@
 
   .review__item-name {
     display: inline-block;
-    padding-top: 55px;
+    padding-top: 53px;
     font-style: normal;
     font-weight: 500;
+    margin-top: 0;
+    width: 668px;
   }
 
   .review__nickname {
@@ -146,6 +150,8 @@
 @media (min-width: 768px) {
   .review__toggle {
     order: 1;
+    width: 170px;
+    margin-bottom: 30px;
   }
 }
 
@@ -167,4 +173,11 @@
   display: block;
   width: 130px;
   height: 53px;
+}
+
+@media (min-width: 768px) {
+  .review__toggle-prev,
+  .review__toggle-next {
+    border: none;
+  }
 }

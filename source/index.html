@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
-    </script>
+
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div style="display:none">
-      <include src="source/img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
       <a class="main-logo" href="https://htmlacademy.ru/">
@@ -22,7 +21,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="main-nav__toggle-hidden">M</span>
+          <span class="main-nav__toggle-hidden">Mеню</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -65,8 +64,9 @@
         </div>
       </div>
       <div class="category">
+        <img class="category__img-line" src="img/bg-zigzag-green.svg" width="668px" height="40px">
         <div class="category__wrapper">
-        <div class="category__green">
+          <div class="category__green">
           <p class="category__text">Предметы интерьера</p>
           <a href="#" class="category__link">
             <img class="category__img" src="img/icon-interior.svg" width="40" height="65" alt="Предметы интерьера">
@@ -207,5 +207,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

@@ -3,12 +3,15 @@
   background-image: url("/img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: 100% 6px;
-  background-position: 0 20px;
+  background-position: 0 15px;
 }
 
 @media (min-width: 768px) {
   .about {
-    .container-tab;
+    width: 100%;
+    margin: 0 auto;
+    background-position: 0 35px;
+    background-size: 668px 15px;
   }
 }
 
@@ -17,6 +20,9 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0 100px;
+    background-position: 50px 53px;
+    background-size: 1050px 22px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -34,7 +40,7 @@
     line-height: 50px;
     width: 668px;
     text-align: left;
-    padding: 60px 0 50px 0;
+    padding: 100px 0 50px 0;
   }
 }
 
@@ -42,8 +48,9 @@
   .about__title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 140px;
-    padding-left: 145px;
+    padding-top: 135px;
+    padding-left: 120px;
+    width: 1050px;
   }
 }
 
@@ -58,13 +65,15 @@
   .about__list {
     display: flex;
     flex-wrap: wrap;
+    width: 668px;
+    margin-bottom: 55px;
   }
 }
 
 @media (min-width: 1150px) {
   .about__list {
     width: 750px;
-    margin: 0 auto;
+    margin-left: 120px;
   }
 }
 
@@ -245,15 +254,29 @@
 @media (min-width: 1150px) {
   .about__item.about__item--money {
     padding-right: 105px;
-    padding-top: 50px;
   }
 
-  .about__item--money::before {
-    top: -2px;
+  .about__item.about__item--ball {
+    padding-right: 0;
+    padding-left: 25px;
+  }
+
+  .about__item--ball::before {
+    top: 0;
+    left: 30px;
   }
 
   .about__item--rocket::before {
     left: -4px;
     top: 29px;
+  }
+
+  .about__item.about__item--gift {
+    padding-right: 0;
+    padding-left: 25px;
+  }
+
+  .about__item--gift::before {
+    left: 30px;
   }
 }

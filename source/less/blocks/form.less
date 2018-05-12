@@ -1,5 +1,7 @@
 .form {
-  .container-mob;
+  width: 270px;
+  padding: 0 25px;
+  margin: 0 auto;
   font-size: 17px;
   line-height: 18px;
   font-weight: 500;
@@ -143,7 +145,7 @@
 }
 
 .form__type-input:checked + .form__type-label::before {
-  box-shadow: inset 0 0 0 10px #ffffff;
+  box-shadow: inset 0 0 0 13px #ffffff;
   background-color: #62d1b2;
 }
 
@@ -152,6 +154,7 @@
     width: 47px;
     height: 47px;
     left: -41px;
+    margin-top: -12px;
   }
 }
 
@@ -177,6 +180,12 @@
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .form__group.form__group--name {
+    margin-top: 19px;
+  }
+}
+
 @media (min-width: 1150px) {
   .form__group.form__group--name {
     width: 1050px;
@@ -188,17 +197,19 @@
     width: 668px;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: 1150px) {
   .form__group.form__group--textarea {
     width: 1050px;
+    margin-bottom: 5px;
   }
 }
 
 .form__color {
-  padding-left: 10px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: 768px) {
@@ -207,23 +218,32 @@
     background-color: #f1f1f1;
     margin: 0;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 
   .form__color-group {
-    width: 668px;
+    width: 550px;
     margin: 0 auto;
-    padding-left: 170px;
+    padding-left: 216px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 37px;
   }
 
   .form__color-wrapper {
-    margin: 5px;
-    width: 230px;
+    width: 130px;
     font-size: 19px;
     line-height: 18px;
+    margin: 0 0 12px;
+    padding: 0 130px 0 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form__color-wrapper {
+    width: 200px;
+    padding: 0 60px 0 0;
   }
 }
 
@@ -234,13 +254,15 @@
 .form__color-input:checked + .form__color-label::before {
   background-image: url("/img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 33px 25px;
   background-position: center center;
 }
 
 @media (min-width: 1150px) {
   .form__color-group {
-    width: 800px;
+    width: 810px;
+    padding-left: 104px;
+    padding-top: 33px;
   }
 }
 
@@ -249,6 +271,16 @@
   padding: 30px 0 5px 55px;
   display: block;
   margin-bottom: 10px;
+}
+
+.form__color-label.form__color-label--right {
+  padding: 27px 0 5px 55px;
+}
+
+@media (min-width: 768px) {
+  .form__color-label.form__color-label--right {
+    padding: 35px 0 0 80px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -264,8 +296,8 @@
   border: 2px solid #000000;
   display: block;
   position: absolute;
-  left: -5px;
-  top: 21px;
+  left: 0;
+  top: 19px;
 }
 
 @media (min-width: 768px) {
@@ -298,8 +330,8 @@
 
 @media (min-width: 1150px) {
   .form__decoration {
-    top: 65px;
-    left: 15px;
+    top: 70px;
+    left: -10px;
   }
 }
 
@@ -322,8 +354,6 @@
     display: flex;
     width: 500px;
     margin-left: 170px;
-    font-size: 19px;
-    line-height: 18px;
   }
 
   .form__name-input {
@@ -351,6 +381,14 @@
   width: 260px;
 }
 
+@media (min-width: 768px) {
+  .form__name-input {
+    font-size: 19px;
+    line-height: 18px;
+    padding: 38px 0 5px 24px;
+  }
+}
+
 .form__name-label {
   margin-top: 27px;
   display: block;
@@ -359,7 +397,7 @@
 @media (min-width: 768px) {
   .form__name-label {
     margin-top: 45px;
-    padding-right: 20px;
+    padding-right: 28px;
     margin-bottom: 15px;
   }
 }
@@ -387,7 +425,7 @@
 .form__contacts-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .form__contacts-tel,
@@ -398,6 +436,12 @@
 .form__contacts-tel::before {
   top: 7px;
   left: 60px;
+}
+
+@media (min-width: 768px) {
+  .form__contacts-tel::before {
+    top: -7px;
+  }
 }
 
 .form__contacts-email::before {
@@ -438,10 +482,11 @@
 }
 
 .form__contacts-input {
-  width: 320px;
+  width: 260px;
   border: none;
   border-bottom: 2px solid #000000;
-  padding: 17px 0;
+  padding: 18px 0 20px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -449,9 +494,10 @@
     flex-grow: 1;
     position: relative;
     background-color: #f1f1f1;
-    margin-left: 290px;
+    margin-left: 167px;
     margin-bottom: 20px;
-    width: 530px;
+    width: 600px;
+    padding: 15px 0 15px 22px;
   }
 }
 
@@ -465,6 +511,12 @@
   padding: 19px 0;
 }
 
+@media (min-width: 768px) {
+  .form__contacts-input--email {
+    padding: 15px 0 22px 22px;
+  }
+}
+
 .form__name {
   margin-top: 35px;
   position: relative;
@@ -472,14 +524,14 @@
 }
 
 .form__name::before {
-  top: 10px;
+  top: 8px;
   left: 55px;
 }
 
 .form__more {
-  width: 230px;
+  width: 225px;
   border: 2px solid #000000;
-  padding: 15px 15px 0;
+  padding: 14px 15px 0;
 }
 
 @media (min-width: 768px) {
@@ -512,7 +564,7 @@
     width: 668px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
   }
 
