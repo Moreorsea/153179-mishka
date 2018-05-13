@@ -19,7 +19,8 @@
           <img class="main-logo__image" src="img/logo-mobile.svg" alt="Логотип">
         </picture>
       </a>
-      <nav class="main-nav">
+      <!--Для открытия меню класс main-nav--show -->
+      <nav class="main-nav main-nav--no-js">
         <button class="main-nav__toggle" type="button">
           <span class="main-nav__toggle-hidden">Mеню</span>
         </button>
@@ -61,19 +62,19 @@
       <div class="category">
         <img class="category__img-line" src="img/bg-zigzag-green.svg" width="668px" height="40px">
         <div class="category__wrapper">
-          <div class="category__green">
-          <p class="category__text">Предметы интерьера</p>
-          <a href="#" class="category__link">
-            <img class="category__img" src="img/icon-interior.svg" width="40" height="65" alt="Предметы интерьера">
+          <a href="#" class="category__item category__item--lightgreen">
+            <p class="category__text">Предметы интерьера</p>
+            <div class="category__link">
+              <img class="category__img" src="img/icon-interior.svg" width="40" height="65" alt="Предметы интерьера">
+            </div>
+          </a>
+          <a href="#" class="category__item category__item--green">
+            <p class="category__text">Детские игрушки</p>
+            <div class="category__link">
+              <img class="category__img" src="img/icon-toy.svg" width="60" height="60" alt="Детские игрушки">
+            </div>
           </a>
         </div>
-        <div class="category__green">
-          <p class="category__text">Детские игрушки</p>
-          <a href="#" class="category__link">
-            <img class="category__img" src="img/icon-toy.svg" width="60" height="60" alt="Детские игрушки">
-          </a>
-        </div>
-      </div>
       </div>
       <div class="best">
         <h2 class="best__title">Вязаные корзинки</h2>

@@ -1,7 +1,11 @@
 .main-nav {
   font-size: 17px;
   line-height: 24px;
-  position: relative;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 @media (min-width: 768px) {
@@ -19,6 +23,20 @@
     width: 1050px;
     padding-top: 25px;
   }
+}
+
+.main-nav--no-js {
+  position: static;
+}
+
+@media (min-width: 768px) {
+  .main-nav--no-js {
+    position: relative;
+  }
+}
+
+.main-nav--show {
+  top: 77px;
 }
 
 .main-nav__toggle {
