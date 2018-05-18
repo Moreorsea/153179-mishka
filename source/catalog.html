@@ -160,16 +160,16 @@
         <p class="product-card__text">Выберите размер:</p>
         <form class="product-card__wrapper">
           <div class="product-card__format">
-            <label class="product-card__name">S</label>
-            <input type="radio" class="product-card__size" name="size" value="S">
+            <label class="product-card__name" for="size">S</label>
+            <input type="radio" class="product-card__size" name="size" value="S" id="size">
           </div>
           <div class="product-card__format">
-            <label class="product-card__name">M</label>
-            <input type="radio" class="product-card__size" name="size" value="M">
+            <label class="product-card__name" for="sizem">M</label>
+            <input type="radio" class="product-card__size" name="size" value="M" id="sizem">
           </div>
           <div class="product-card__format">
-            <label class="product-card__name">L</label>
-            <input type="radio" class="product-card__size" name="size" value="L">
+            <label class="product-card__name" for="sizel">L</label>
+            <input type="radio" class="product-card__size" name="size" value="L" id="sizel">
           </div>
         </form>
         <button class="button button--vary" type="button">Добавить</button>
@@ -213,5 +213,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

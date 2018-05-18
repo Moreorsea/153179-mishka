@@ -49,7 +49,7 @@
   .about__title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 135px;
+    padding-top: 132px;
     padding-left: 75px;
     width: 1050px;
   }
@@ -185,12 +185,6 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .about__item {
-    width: 235px;
-  }
-}
-
 .about__item-img {
   margin-bottom: 10px;
 }
@@ -253,36 +247,51 @@
 }
 
 @media (min-width: 1150px) {
+  .about__item {
+    width: 300px;
+    padding: 55px 0;
+  }
+}
+
+@media (min-width: 1150px) {
   .about__item.about__item--money {
-    /*padding-right: 105px;*/
-    width: 245px;
+    width: 300px;
+    padding: 55px 0;
+  }
+
+  .about__item--money::before {
+    top: 6px;
   }
 
   .about__item.about__item--ball {
-    padding-right: 0;
-    padding-left: 25px;
+    padding: 55px 0 0 55px;
   }
 
   .about__item--ball::before {
-    top: 0;
-    left: 30px;
+    top: 5px;
+    left: 57px;
+  }
+
+  .about__item--heart::before {
+    top: 12px;
   }
 
   .about__item--rocket::before {
-    top: 29px;
-    left: 20px;
+    top: 7px;
+    left: 48px;
   }
 
   .about__item.about__item--rocket {
-    padding-left: 20px;
+    padding: 55px 0 0 55px;
   }
 
   .about__item.about__item--gift {
-    padding-right: 0;
-    padding-left: 25px;
+    width: 300px;
+    padding: 55px 0 0 55px;
   }
 
   .about__item--gift::before {
-    left: 30px;
+    left: 55px;
+    top: 6px;
   }
 }
