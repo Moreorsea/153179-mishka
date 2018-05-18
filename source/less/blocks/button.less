@@ -23,17 +23,19 @@
   background-color: #63d1bb;
   border: 1px solid #63d1bb;
   color: #ffffff;
+  margin: 15px auto 0;
+  min-width: 260px;
 }
 
 @media (min-width: 768px) {
-  .button--vary {
+  .button.button--vary {
     margin: 30px auto;
-    width: 287px;
+    width: 350px;
   }
 }
 
 .button.button--review {
-  margin-top: 35px;
+  margin-top: 37px;
   padding: 14px 22px;
   width: 215px;
 }
@@ -47,7 +49,7 @@
 }
 
 .button.button--feedback {
-  margin: 50px auto 40px;
+  margin: 38px auto 40px;
   width: 195px;
 }
 
@@ -67,8 +69,8 @@
 }
 
 .button.button--send {
-  margin: 33px 0 55px;
-  width: 195px;
+  margin: 33px auto 55px;
+  width: 260px;
 }
 
 @media (min-width: 768px) {
@@ -76,6 +78,8 @@
     order: -2;
     padding: 15px 30px;
     width: auto;
+    margin-left: 0;
+    background-color: #ffffff;
   }
 }
 
@@ -86,7 +90,7 @@
 }
 
 .button.button--price {
-  margin: 25px 30px 35px;
+  margin: 25px 35px;
   padding: 15px 20px;
 }
 
@@ -107,7 +111,16 @@
 }
 
 .button.button--submit {
-  padding: 13px 30px;
+  padding: 14px 30px;
+}
+
+.button.button--submit:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.button.button--submit:active {
+  color: #858585;
 }
 
 @media (min-width: 768px) {

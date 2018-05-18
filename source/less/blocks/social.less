@@ -1,5 +1,5 @@
 .social {
-  padding: 30px 0 20px;
+  padding: 33px 0 20px;
   margin: 0 auto;
   list-style: none;
   display: flex;
@@ -14,14 +14,27 @@
 @media (min-width: 768px) {
   .social {
     padding: 0;
-    margin: 7px 0 0;
+    margin: 40px 10px 0 0;
     width: 150px;
     justify-content: space-between;
-    margin-left: 85px;
   }
 
   .social__item:first-child,
   .social__item:last-child {
     margin-top: 5px;
   }
+}
+
+@media (min-width: 1150px) {
+  .social {
+    margin-left: 0;
+  }
+}
+
+.social__link-icon:hover {
+  fill: #46c1ae;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }

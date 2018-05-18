@@ -15,3 +15,22 @@ ymaps.ready(init);
 
   myMap.geoObjects.add(myPlacemark);
 }
+
+var carts = document.querySelectorAll('.catalog-item__price-link');
+var popup = document.querySelector('.product-card');
+var popupAdd = popup.querySelector('.button--vary');
+
+var showPopupHandler = function (e) {
+e.preventDefault();
+popup.classList.add('product-card--show');
+};
+
+var closePopupHandler = function () {
+popup.classList.remove('product-card--show');
+};
+
+[].forEach.call(carts, function (item) {
+item.addEventListener('click', showPopupHandler);
+});
+
+popupAdd.addEventListener('click', closePopupHandler);
