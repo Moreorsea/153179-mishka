@@ -4,49 +4,64 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.js" async></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="page-header page-header--grey">
-      <a class="main-logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="main-logo__image" src="img/logo-mobile.svg" alt="Логотип">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">M</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__search">
-          <li class="main-nav__search-item main-nav__search-item--search">
-            <a class="main-nav__search-link main-nav__search-link--search" href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__search-item">
-            <a class="main-nav__search-link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="main-nav__add-list">
-          <li class="main-nav__add-item">
-            <a href="#" class="main-nav__add-link">Новые поступления</a>
-          </li>
-          <li class="main-nav__add-item">
-            <a href="#" class="main-nav__add-link">Распродажа</a>
-          </li>
-        </ul>
-        <span class="main-nav__delivery">
-          <a href="#" class="main-nav__delivery-link">Бесплатная доставка по России</a>
-        </span>
-      </nav>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header page-header--grey page-header--no-js">
+      <div class="main-nav">
+        <div class="main-nav__wrapper">
+          <a href="index.html" class="main-nav__logo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип" width="90" height="36">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="main-nav__toggle-hidden">Mеню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__search">
+            <li class="main-nav__search-item main-nav__search-item--search">
+              <svg viewbox="0 0 10 10" class="main-nav__search-img">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              <a class="main-nav__search-search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__search-item">
+              <svg viewbox="0 0 10 10" class="main-nav__search-img">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              <a class="main-nav__search-cart" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__add-list">
+            <li class="main-nav__add-item">
+              <a href="#" class="main-nav__add-link">Новые поступления</a>
+            </li>
+            <li class="main-nav__add-item">
+              <a href="#" class="main-nav__add-link">Распродажа</a>
+            </li>
+          </ul>
+          <span class="main-nav__delivery">
+            <a href="#" class="main-nav__delivery-link">Бесплатная доставка по России</a>
+          </span>
+        </div>
+      </div>
     </header>
     <main class="page-form">
       <div class="page-form__wrapper">
@@ -59,7 +74,7 @@
           <legend class="form__type">Тип</legend>
           <div class="form__type-wrapper form__type-wrapper--top">
             <input type="radio" class="form__type-input" name="decoration" value="furniture" id="furniture" checked>
-            <label class="form__type-label fotm__type-label--top" for="furniture">Аксессуар для интерьера</label>
+            <label class="form__type-label form__type-label--top" for="furniture">Аксессуар для интерьера</label>
           </div>
           <div class="form__type-wrapper form__type-wrapper--bottom">
             <input type="radio" class="form__type-input" name="decoration" value="toy" id="toy">
@@ -68,8 +83,6 @@
         </fieldset>
         <fieldset class="form__group-color">
           <div class="form__color">
-
-
             <div class="form__color-group">
               <div class="form__decoration">Цвет</div>
               <div class="form__color-wrapper">
@@ -82,19 +95,19 @@
               </div>
               <div class="form__color-wrapper">
                 <input type="checkbox" class="form__color-input" name="tif" id="tif" value="tif">
-                <label class="form__color-label" for="tif">"Тиффани"</label>
+                <label class="form__color-label" for="tif">«Тиффани»</label>
               </div>
               <div class="form__color-wrapper">
                 <input type="checkbox" class="form__color-input" name="black" id="black" value="black">
-                <label class="form__color-label" for="black">Черный</label>
+                <label class="form__color-label form__color-label--right" for="black">Черный</label>
               </div>
               <div class="form__color-wrapper">
                 <input type="checkbox" class="form__color-input" name="pink" id="pink" value="pink">
-                <label class="form__color-label" for="pink">Розовый</label>
+                <label class="form__color-label form__color-label--right" for="pink">Розовый</label>
               </div>
               <div class="form__color-wrapper">
                 <input type="checkbox" class="form__color-input" name="orange" id="orange" value="orange">
-                <label class="form__color-label" for="orange">Оранжевый</label>
+                <label class="form__color-label form__color-label--right" for="orange">Оранжевый</label>
               </div>
             </div>
           </div>
@@ -118,10 +131,16 @@
           <div class="form__contacts-wrapper">
             <label class="form__contacts-tel" for="tel">Тел</label>
             <input type="tel" class="form__contacts-input" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XX XX*" required id="tel">
+            <svg viewbox="0 0 10 10" class="form__contacts-img">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
           </div>
-          <div class="form__contacts-wrapper">
-            <label class="form__contacts-email">E - mail</label>
+          <div class="form__contacts-wrapper form__contacts-wrapper--mail">
+            <label class="form__contacts-email">E-mail</label>
             <input type="email" class="form__contacts-input form__contacts-input--email" name="email" id="email" placeholder="Ваш E-mail*" required>
+            <svg viewbox="0 0 10 10" class="form__contacts-img form__contacts-img--email">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
           </div>
         </div>
         <fieldset class="form__group form__group--textarea">
@@ -130,38 +149,47 @@
         </fieldset>
         <div class="form__send">
           <span class="form__send-text">*Поля обязательны для заполнения</span>
-          <a class="button button--send" href="#">Отправить заказ</a>
+          <button class="button button--send">Отправить заказ</button>
         </div>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="main-logo main-logo--footer" href="index.html">
-          <img class="main-logo__image--inv" src="img/logo-footer.svg">
+        <a class="page-footer__logo page-footer__logo--footer">
+          <svg viewbox="0 0 10 10" class="page-footer__logo-image page-footer__logo-image--inv" width="103" height="35">
+            <use xlink:href="#icon-logo-footer"></use>
+          </svg>
         </a>
         <ul class="social">
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/htmlacademy">
-              <img src="img/icon-insta.svg" alt="insta">
+              <svg viewbox="0 0 10 10" class="social__link-icon" width="25" height="22">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/htmlacademy">
-              <img src="img/icon-fb.svg" alt="fb">
+              <svg viewbox="0 0 10 10" class="social__link-icon" width="30" height="30">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://twitter.com/htmlacademy_ru">
-              <img src="img/icon-twitter.svg" alt="tw">
+              <svg viewbox="0 0 10 10" class="social__link-icon" width="23" height="24">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <div class="footer-copyright">
           <b class="footer-copyright__text">Разработано</b>
           <a href="https://up.htmlacademy.ru/adaptive" class="footer-copyright__link">
-            <img src="img/htmlacademy.svg" width="40" height="40">
+            <img src="img/htmlacademy.svg" class="footer-copyright__link-img" width="40" height="40" alt="Логотип академии">
           </a>
         </div>
+      </div>
     </footer>
   </body>
 </html>
